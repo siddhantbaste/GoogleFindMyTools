@@ -10,7 +10,7 @@
 LOG_MODULE_REGISTER(main, CONFIG_APP_LOG_LEVEL);
 
 // This is the advertisement key / EID. Change it to your own EID.
-const char *eid_string = "INSERT_YOUR_ADVERTISEMENT_KEY_HERE";
+const char *eid_string = "04b6e81c8e8949928d9eeeca6c14bd3e708148f5";
 
 void hex_string_to_bytes(const char *hex, uint8_t *bytes, size_t len) {
   for (size_t i = 0; i < len; i++) {
