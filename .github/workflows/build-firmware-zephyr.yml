@@ -30,4 +30,10 @@ jobs:
     - name: Build
       working-directory: ZephyrFirmware
       run: |
-        west build -b nrf52840dk/nrf52840 app
+        west build -b xiao_ble app
+
+    - name: Upload UF2 Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: xiao-fmd-tracker
+        path: ZephyrFirmware/build/zephyr/zephyr.uf2
